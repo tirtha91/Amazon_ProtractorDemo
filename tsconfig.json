@@ -1,0 +1,26 @@
+{   
+    // to instruct typescript complier how to compile .ts files
+    "compilerOptions": { 
+
+        "target": "es6",     // specify EXMAScript target version
+        "module": "commonjs", // specify module code generation
+        "declaration": false,  // generates corresponding .d.ts file
+        "sourceMap": false,  // generates corresponding .map file
+        "outDir": "outputJSFiles",  // Redirect output structure ot the directory
+        "removeComments": true,  // Do not emit comments to output
+        "strict": true,  // Enable all strict-type checking options
+        "noImplicitAny": false,
+        "moduleResolution": "node", // Specify module resolution strategy
+        // "typeRoots": [
+        //     "./node_modules/@types",
+        //     "./node_modules"
+        // ],                          // Type declaration files to be included in compilation
+        "esModuleInterop": true,
+    } ,
+    
+    "exclude": [
+        "node_modules",
+        "typescript"
+    ],
+    "compileOnSave": false
+}
